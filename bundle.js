@@ -1,0 +1,2 @@
+(()=>{"use strict";(({openBtn:e,menu:t,classActive:n,closeTrigger:r})=>{const c=document.querySelector(e),i=document.querySelector(t),a=document.querySelectorAll(r);c?.addEventListener("click",(()=>{return e=n,void i?.classList.add(e);var e})),a.forEach((e=>e.addEventListener("click",(()=>{return e=n,void i?.classList.remove(e);var e}))))})({openBtn:".header__burger-btn",menu:".navigation",classActive:"navigation_active",closeTrigger:".navigation__item, .navigation__close"})})();
+//# sourceMappingURL=bundle.js.map
