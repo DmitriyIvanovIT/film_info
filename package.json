@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dmitriyivanovit.github.io/film_info",
   "name": "film_info",
   "version": "1.0.0",
   "description": "site with film info",
@@ -15,6 +16,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-webpack-plugin": "^3.1.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.4.5",
     "prettier": "^2.5.1",
@@ -27,6 +29,8 @@
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production --progress",
     "eslint:lint": "eslint --ext .ts,.tsx,.js,.jsx,.json .",
-    "eslint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.json --fix ."
+    "eslint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.json --fix .",
+    "predploy": "yarn build",
+    "deploy": "gh-pages -d build"
   }
 }
