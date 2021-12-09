@@ -1,13 +1,6 @@
-import Axios, { AxiosError, AxiosInstance } from 'axios';
-import {API_KEY} from "./configs";
+import Axios, { AxiosInstance } from 'axios';
 
-const createAxios = (): AxiosInstance => {
-  const instance = Axios.create({
-    baseURL: API_KEY,
-  });
-
-  return instance;
-};
+const createAxios = (): AxiosInstance => Axios.create();
 
 export const axios = createAxios();
 

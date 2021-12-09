@@ -18,7 +18,7 @@
     "paths": {
       "@/modules/*": ["modules/*"],
       "@/styles/*": ["styles/*"],
-      "@/lib/*": ["lib/"],
+      "@/lib/*": ["lib/*"],
       "@/types/*": ["types/*"]
     }
   },
