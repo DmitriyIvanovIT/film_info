@@ -30,7 +30,7 @@
     "build": "webpack --mode production --progress",
     "eslint:lint": "eslint --ext .ts,.tsx,.js,.jsx,.json .",
     "eslint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.json --fix .",
-    "predploy": "yarn build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   }
 }

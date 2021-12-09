@@ -16,7 +16,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
-      "@modules/*": ["modules/*"]
+      "@modules/*": ["modules/*"],
+      "@/styles/*": ["styles/*"]
     }
   },
   "include": ["src"],

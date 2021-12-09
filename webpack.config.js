@@ -12,7 +12,6 @@ module.exports = {
   entry: src + '/index.ts',
   output: {
     path: build,
-    publicPath: "/",
     filename: "bundle.js"
   },
   devtool: 'source-map',
