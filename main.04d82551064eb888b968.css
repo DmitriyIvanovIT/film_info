@@ -350,32 +350,32 @@ template {
 
 @font-face {
     font-family: Inter;
-    src: url(/bd097ceff83f90802a12.woff2) format("woff2"),
-    url(/0d6f7c99e635f1fec4c9.woff) format("woff");
+    src: url(bd097ceff83f90802a12.woff2) format("woff2"),
+    url(0d6f7c99e635f1fec4c9.woff) format("woff");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: Inter;
-    src: url(/c08e610806161507e8e3.woff2) format("woff2"),
-    url(/1e547cd04bfe2dae1f98.woff) format("woff");
+    src: url(c08e610806161507e8e3.woff2) format("woff2"),
+    url(1e547cd04bfe2dae1f98.woff) format("woff");
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: Raleway;
-    src: url(/c8eceb372bf7df739fd1.woff2) format("woff2"),
-    url(/de533c0ade2ca589b6ac.woff) format("woff");
+    src: url(c8eceb372bf7df739fd1.woff2) format("woff2"),
+    url(de533c0ade2ca589b6ac.woff) format("woff");
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: Raleway;
-    src: url(/880f907ac580b6335a87.woff2) format("woff2"),
-    url(/782517814d27829f68d6.woff) format("woff");
+    src: url(880f907ac580b6335a87.woff2) format("woff2"),
+    url(782517814d27829f68d6.woff) format("woff");
     font-weight: 800;
     font-display: swap;
 }
@@ -483,7 +483,7 @@ input[type="search" i]::-webkit-search-cancel-button{
     flex-grow: 1;
     height: 70px;
     padding-left: 60px;
-    background-image: url(/903e198a99f8815fee6c.svg);
+    background-image: url(903e198a99f8815fee6c.svg);
     background-repeat: no-repeat;
     background-position: left 15px center;
     background-color: var(--color-second);
@@ -709,7 +709,7 @@ input[type="search" i]::-webkit-search-cancel-button{
     width: 104px;
     height: 72px;
     background-color: var(--color-second);
-    background-image: url(/c6fb9e9f9f71c09d82ea.svg);
+    background-image: url(c6fb9e9f9f71c09d82ea.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 6px;
@@ -1123,4 +1123,4 @@ gap: 30px 20px;
 
 
 
-/*# sourceMappingURL=main.a6e8886d2f030af43f6d.css.map*/
+/*# sourceMappingURL=main.04d82551064eb888b968.css.map*/
