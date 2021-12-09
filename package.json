@@ -8,6 +8,7 @@
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.0.0",
@@ -26,11 +27,14 @@
     "webpack-dev-server": "^4.6.0"
   },
   "scripts": {
-    "dev": "webpack serve --mode development",
+    "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production --progress",
     "eslint:lint": "eslint --ext .ts,.tsx,.js,.jsx,.json .",
     "eslint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.json --fix .",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }
