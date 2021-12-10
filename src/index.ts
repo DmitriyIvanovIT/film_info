@@ -1,6 +1,7 @@
 import '@/style/style.css';
 import slideMenu from "@/modules/slideMenu";
 import renderVideo from "@/modules/renderVideo";
+import menuLink from "@/modules/menuLink";
 
 slideMenu(
   {
@@ -12,3 +13,4 @@ slideMenu(
 );
 
 renderVideo();
+menuLink();

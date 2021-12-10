@@ -38,3 +38,13 @@ export const getTrends  = async (
   page: number | undefined = 1,
   period: 'day' | 'week' | undefined = "week"
 ): Promise<ITrendingResult[]> =>  await getData(`trending/${type}/${period}`, page);
+
+export const getPopular = async (
+  type: 'movie' | 'tv',
+  page: number | undefined = 1,
+): Promise<ITrendingResult[]> => await getData(`${type}/popular`, page);
+
+export const getTop = async (
+  type: 'movie' | 'tv',
+  page: number | undefined = 1,
+): Promise<ITrendingResult[]> => await getData(`${type}/top_rated`, page);

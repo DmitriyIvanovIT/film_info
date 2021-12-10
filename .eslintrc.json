@@ -12,14 +12,7 @@
   ],
   "plugins": ["@typescript-eslint"],
   "globals": {
-    "React": "writable",
-    "WEB_URL": true,
     "require": false,
     "process": false
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }
