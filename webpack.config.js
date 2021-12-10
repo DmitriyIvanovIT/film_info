@@ -9,10 +9,13 @@ const src = path.resolve(__dirname, './src');
 const build = path.resolve(__dirname, './build');
 
 module.exports = {
-  entry: src + '/index.ts',
+  entry: {
+    youtube: src + '/videotube.ts',
+    main: src + '/index.ts',
+  },
   output: {
     path: build,
-    filename: "bundle.js"
+    filename: "[name].[contenthash].js"
   },
   devtool: 'source-map',
   module: {

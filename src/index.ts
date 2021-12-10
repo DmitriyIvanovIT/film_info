@@ -1,7 +1,9 @@
 import '@/style/style.css';
+import '@/style/videotube.css';
 import slideMenu from "@/modules/slideMenu";
 import renderVideo from "@/modules/renderVideo";
 import menuLink from "@/modules/menuLink";
+import search from "@/modules/search";
 
 slideMenu(
   {
@@ -14,3 +16,4 @@ slideMenu(
 
 renderVideo();
 menuLink();
+search()

@@ -1,9 +1,9 @@
-import { getTrends, ITrendingResult } from "@/lib/api.services";
+import {getTrends, getVideo, ITrendingResult, IVideoResult} from "@/lib/api.services";
 import renderCard from "./renderCard";
 
 const filmWeek: HTMLElement | null = document.querySelector('.film-week');
 
-const firstRender = (data: ITrendingResult): void => {
+const firstRender = (data: ITrendingResult, video: IVideoResult | undefined): void => {
 
   (filmWeek as HTMLElement).innerHTML = `
      <div class="container film-week__container" data-rating="${data.vote_average}">
@@ -13,7 +13,12 @@ const firstRender = (data: ITrendingResult): void => {
        </div>
        <h2 class="film-week__title">${data.name || data.title}</h2>
 
-       ${data.video ? `<a class="film-week__watch-trailer tube" target="_blank" href="https://youtu.be/V0hagz_8L3M" aria-label="смотреть трейлер"></a>` : ''}
+       ${video ?
+          `<a class="film-week__watch-trailer tube"
+           href="https://youtu.be/${video.key}"
+           aria-label="смотреть трейлер"></a>` :
+          ''
+       }
 
      </div>
    `;
@@ -24,10 +29,10 @@ const renderVideo = async () => {
   const [ firstCard, ...otherCard ] = data;
   otherCard.length = 12;
 
-  console.log(data);
+  const video = await getVideo(firstCard.media_type, firstCard.id);
 
-  firstRender(firstCard);
-  renderCard(otherCard);
+  firstRender(firstCard, video[0]);
+  await renderCard(otherCard);
 };
 
 export default renderVideo;

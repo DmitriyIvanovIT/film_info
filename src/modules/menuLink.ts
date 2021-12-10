@@ -34,19 +34,19 @@ const menuLink = () => {
           case MenuLinkItems.linkTriends: return renderVideo();
           case MenuLinkItems.popularMovies: return getPopular('movie')
             .then(
-              (data) => renderCard(data)
+              (data) => renderCard(data, 'movie')
             );
           case MenuLinkItems.popularTv: return getPopular('tv')
             .then(
-              (data) => renderCard(data)
+              (data) => renderCard(data, 'tv')
             );
           case MenuLinkItems.topMovies: return getTop('movie')
             .then(
-              (data) => renderCard(data)
+              (data) => renderCard(data, 'movie')
             );
           case MenuLinkItems.topTv: return getTop('tv')
             .then(
-              (data) => renderCard(data)
+              (data) => renderCard(data, 'tv')
             );
         }
       }
